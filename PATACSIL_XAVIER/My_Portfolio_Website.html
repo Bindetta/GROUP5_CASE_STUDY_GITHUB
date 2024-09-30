@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+    <div class = "First_header">
+        <div class = "wrapper">
+            <header>
+                <div class = "logo">
+                    <i class="fa-solid fa-x"></i>
+                    <div class = "logo_text">XAVIER PATACSIL</div>
+                </div>
+                <nav>
+                    <div class="toggle_button">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="nav_links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class = "container">
+                <div class="my_pic">
+                    <img src="my_image.png" alt="profile pic">
+                </div>
+                <div class="my_text">
+                    <h5>Hi I'm a <span class="input">Web and Mobile Application Developer</span></h5>
+                    <h1>Xavier Patacsil</h1>
+                    <p> i am a 4th year student in Tarlac State University in short for TSU, i have been taking WMA as my major for 4 years,
+                        as i continue to learn and study i’m confident in my skills to developed a quality applications or website.
+                    </p>
+                    <div class="button_group">
+                        <a href="#" class="btn active">About</a>
+                        <a href="#" class="btn">Contact</a>
+                    </div>
+                    <div class ="social">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+    <script>
+        var toggle_button=document.querySelector(".toggle_button");
+        var nav=document.querySelector(".nav_links");
+        var links=document.querySelector(".nav_links li");
+
+        toggle_button.addEventListener("click", function(){
+            this.classList.toggle("click");
+            nav.classList.toggle("open");
+        })
+
+        var typed =new Typed(".input",{
+            strings:["Web Developer", "Unity Developer", "Backend Developer"],
+            typedSpeed:70,
+            backSpeed:55,
+            loop:true
+        })
+    </script>
+    
+</body>
+</html>
