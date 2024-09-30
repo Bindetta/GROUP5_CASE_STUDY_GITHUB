@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robin Gonzales</title>
+    <style>
+        body{
+            background-image: url('bg.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            text-align: center;   
+            scroll-behavior: smooth; 
+            color: white;
+        }
+        #toolbar{
+            display: flex;
+            padding: 50px;
+            justify-content: end;
+            text-align: end;
+        }
+        .home_container, .designs_container, .about_container, .contactus_container{
+            padding: 20px;
+        }
+        .profile{
+            padding-top: 100px;
+        }
+        .profile_img{
+            width: 200px;
+            height: auto;
+            border: 2px solid lightblue;
+            border-radius: 100%;
+            animation-name: beat;
+            animation-duration: 2.5s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes beat{
+            0%   {transform: scale(1);}
+            50%  {transform: scale(1.2)}
+            100% {transform: scale(1);}
+        }
+        #toolbar a{
+            padding: 10px;
+            padding-left: 20px;
+            padding-right: 20px;
+            font-size: 32px;
+            font-style: normal;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            color: white;
+            text-decoration: none;
+            border-radius: 10%;
+            transition: 0.4s;
+        }
+        #toolbar a:hover{
+            transition: 0.4s;
+            color: lightblue;
+        }
+        #header_main{
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 64px;
+        }
+        #typing_text{
+            font-size: 32px;
+            font-family:  system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+        }
+        #typing_text span{
+            position: relative;
+        }
+        #typing_text span::before{
+            content: "Web Developer";
+            color: white;
+            animation: words 10s infinite;
+        }
+        #typing_text span::after{
+            content: "";
+            position: absolute;
+            width: calc(100% + 8px);
+            height: 100%;
+            border-left: 3px solid white;
+            right: -8;
+            animation: cursor 0.6s infinite;
+        }
+        @keyframes cursor {
+            to {
+                border-left: 3px solid var(--accent-color);
+            }
+        }
+
+        @keyframes words {
+            0%, 20% {
+                color: orange;
+                content: "Web Developer";
+            }
+            21%, 40% {
+                color: purple;
+                content: "Game Developer";
+            }
+            41%, 60% {
+                color: skyblue;
+                content: "Tech Enthusiast";
+            }
+            61%, 80% {
+                color: greenyellow;
+                content: "Front-End Developer";
+            }
+            81%, 100% {
+                color: cyan;
+                content: "Pixel Animator";
+            }
+        }
+        #images_main{
+            padding: 100px;
+        }
+        .gifs{
+            padding: 60px;
+            width: 180px;
+            height: auto;
+        }
+        #subtitle{
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        #highlights{
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 32px;
+            text-align: left;
+            padding: 30px;
+        }
+        #video_links{
+            text-align: center;
+            justify-content: center;
+
+        }
+        #video_links video{
+            width: 600px;
+            height: 100%;
+            padding: 50px;
+            transition: 0.3s;
+        }
+        #video_links video:hover{
+            transform: scale(1.2);
+            transition: 0.3s;
+        }
+
+        #toolbar_end{
+            display: flex;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <header id="toolbar">
+            <div class="home_container"><a href="">Home</a></div>
+            <div class="designs_container"><a href="">Designs</a></div>
+            <div class="about_container"><a href="">About me</a></div>
+            <div class="contactus_container"><a href="">Contact Us</a></div>
+    </header>
+    <div class="profile"><img class="profile_img" src="2x2.png" alt=""></div>
+    <h1 id="header_main">Hi, I am Robin Gonzales! :)</h1>
+    <h3 id="typing_text">I am a <span></span></h3>
+    <div id="images_main">
+        <img class="gifs" src="Dead Militia.gif" alt="">
+        <img class="gifs" src="Dead Running.gif" alt="">
+        <img class="gifs" src="Militia Walking Animation.gif" alt="">
+        <img class="gifs" src="Rifle shooting.gif" alt="">
+        <img class="gifs" src="Militia IDLE.gif" alt="">
+        <img class="gifs" src="Reload 2.gif" alt="">
+        <img class="gifs" src="Reload.gif" alt="">
+        <img class="gifs" src="Militia Trench Ready.gif" alt="">
+    </div>
+    <h2 id="subtitle">These animations are made for the latest project for game development.</h2>
+    <br>
+    <div id="highlights">Highlights</div>
+<div id="video_links">
+    <a href="">
+        <video width="400" height="400" autoplay muted>
+        <source src="cannon.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video></iframe>
+    </a>
+
+    <a href="">
+        <video width="400" height="400" autoplay muted>
+        <source src="present.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video></iframe>
+    </a>
+    <br>
+    <a href="">
+        <video width="400" height="400" autoplay muted>
+        <source src="deliveats.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video></iframe>
+    </a>
+    <a href="">
+        <video width="400" height="400" autoplay muted>
+        <source src="code.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video></iframe>
+    </a>
+</div>
+</body>
+</html>
