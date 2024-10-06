@@ -9,95 +9,136 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #333;
+            background-color: #1F2833;
+            color: #66FCF1;
             text-align: center;
         }
         header {
             display: flex;
             justify-content: space-between;
-            background: #333;
-            color: #fff;
-            padding: 10px 20px;
+            background: #1F2833;
+            padding: 20px;
         }
         nav {
             display: flex;
             align-items: center;
         }
         nav a {
-            color: #fff;
+            color: #66FCF1;
             text-decoration: none;
             margin-left: 20px;
         }
-        .main {
-            margin: 50px 0;
-        }
         .image-container {
-            position: relative;
-            margin: auto;
-            width: 150px; /* Adjust size as needed */
-            height: 150px; /* Adjust size as needed */
+            margin: 30px 0;
         }
         .image-container img {
+            width: 150px;
+            height: 150px;
             border-radius: 50%;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
         }
         .description {
             margin-top: 20px;
             padding: 0 20px;
-            color: #ffffff;
+            color: #66FCF1;
             line-height: 1.8;
+        }
+        .slider {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            margin: 30px auto;
+            overflow: hidden;
+            border: 2px solid #66FCF1;
+            border-radius: 8px;
+        }
+        .slides {
+            display: flex;
+            transition: transform 0.5s ease;
+            width: 100%; /* Ensures full width for flex items */
+        }
+        .slide {
+            min-width: 100%;
+            box-sizing: border-box;
+            padding: 20px;
+            background-color: #1F2833;
+            color: #66FCF1;
+            text-align: center;
         }
         footer {
             text-align: center;
             padding: 10px;
-            background: #333;
-            color: #ffffff;
-            position: relative;
-            bottom: 0;
-            width: 100%;
+            background: #1F2833;
+            color: #66FCF1;
         }
-    
-        
     </style>
 </head>
 <body>
     <header>
         <nav>
-            <a href="#">John Paul Mani</a>
+            <a href="#">Home</a>
         </nav>
         <nav>
-            <a href="#">About Me</a>
             <a href="#">Projects</a>
+            <a href="#">About Me</a>
             <a href="#">Contact</a>
         </nav>
     </header>
-    <div class="main">
-        <div class="image-container">
-            <img src="img/Mypic.jpg" alt="Your Name">
-        </div>
-        <div class="description">
-            <h2>My name is John Paul Mani</h2>
-            <p>I am currently a student at Tarlac State University
-                <br>studying Information Technology major in Web and Mobile Application
-                <br>
-                <br>I am interested in Web and Mobile Application development because I've
-                <br>always been fascinated by gadgetes and technology. My Ultimate dream is
-                <br>to create engaging application games that captivate users and provide 
-                <br>unique experience. The blend of creativity and technical challenge in 
-                <br>application  development excites me, as i enjoy bringing imaginative ideas
-                <br>to life while enhancing user interaction and enjoyment.
-                <br>
-                <br>This is a website i created for completion of my case studdy in my IPT-2
-                <br>subject.
-        
 
-            </p>
+    <div class="image-container">
+        <img src="img/Mypic.jpg" alt="Your Name">
+    </div>
+    <div class="description">
+        <h2>My name is John Paul Mani</h2>
+        <p>I am currently a student at Tarlac State University<br>
+        studying Information Technology major in Web and Mobile Application<br><br>
+        I am interested in Web and Mobile Application development because I've<br>
+        always been fascinated by gadgets and technology. My ultimate dream is<br>
+        to create engaging application games that captivate users and provide <br>
+        unique experiences. The blend of creativity and technical challenge in <br>
+        application development excites me, as I enjoy bringing imaginative ideas<br>
+        to life while enhancing user interaction and enjoyment.<br><br>
+        This is a website I created for the completion of my case study in my IPT-2<br>
+        subject.</p>
+    </div>
+
+    <!-- Automatic Slideshow of Descriptions -->
+    <div class="slider">
+        <div class="slides">
+            <div class="slide">
+                <h3>Web Development Skills</h3>
+                <p>Proficient in HTML, CSS, and JavaScript, I create responsive and user-friendly websites. My passion for clean code and best practices drives me to constantly improve and stay updated with the latest web technologies.</p>
+            </div>
+            <div class="slide">
+                <h3>Project Showcase</h3>
+                <p>Explore my diverse portfolio of projects, including web applications and mobile apps. Each project reflects my dedication to solving real-world problems through innovative solutions and engaging user experiences.</p>
+            </div>
+            <div class="slide">
+                <h3>Continuous Learning</h3>
+                <p>I believe in lifelong learning and actively seek opportunities to expand my skill set. Whether through online courses, workshops, or collaborative projects, I'm committed to growing as a developer and contributing to the tech community.</p>
+            </div>
         </div>
     </div>
+
     <footer>
-        <p>&copy; 2024 Created by: John Paul T. Mani</p>
+        <p>&copy; 2024 IPT-2 Created by: John Paul T. Mani</p>
     </footer>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        const totalSlides = slides.length;
+
+        function showSlide(index) {
+            const slidesContainer = document.querySelector('.slides');
+            slidesContainer.style.transform = `translateX(-${index * 100}%)`;
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % totalSlides; // Loop back to the first slide
+            showSlide(currentSlide);
+        }
+
+        setInterval(nextSlide, 5000); // Change slide every 5 seconds
+    </script>
 </body>
 </html>
