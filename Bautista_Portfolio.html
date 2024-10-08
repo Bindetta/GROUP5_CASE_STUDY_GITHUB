@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOMd7eP3U15qgWEp1jcOq0Is9NDH0BydXtKN4rIw" crossorigin="anonymous">
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo2.png" class="logo" alt="Logo">
+            <ul>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Activities</a></li>
+                <li><a href="#contact">Contact</a></li> <!-- Corrected ID here -->
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p>UI/UX Designer</p>
+            <h1>Hello!, I'm Gabriella, a dedicated and <br>passionate Information Technology student. <br>I'm passionate about problem-solving,<br>online technologies, and software <br> development. I enjoy picking up new <br>abilities and using my knowledge to make<br> meaningful contributions.</h1>
+        </div>
+    </div>
+</div>
+
+<!-- About Section -->
+<section id="about"> 
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user2.png" alt="User Image">
+            </div>
+            <div class="about-col-2"> 
+                
+                <h1 class="sub-title">About Me</h1> =
+                <p>Hello! My name is Gabriella Xereil P. Bautista, and I am currently a Bachelor of Science in Information Technology (BSIT) student. I am passionate about technology and problem-solving, with a strong interest in software development, web design, and mobile application development. Throughout my studies, I have gained valuable experience in programming, database management, and user interface design, and I enjoy working on projects that challenge my skills and expand my knowledge. I am eager to apply what I've learned to real-world scenarios and look forward to contributing meaningfully to the tech industry.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab(event, 'skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab(event, 'education')">Education</p>
+                    <p class="tab-links" onclick="opentab(event, 'experience')">Experience</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+                        <li><span>Web Development</span><br>Designing Web Application Interfaces</li>
+                        <li><span>Application Development</span><br>Creating Android/iOS Interfaces</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>BACHELOR OF SCIENCE IN INFORMATION TECHNOLOGY</span><br>Major in Web and Mobile Application</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>None</span><br>None</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Services Section -->
+<section id="services">
+    <div class="container">
+        <h1 class="sub-title">My Activities</h1>
+        <div class="activities-list">
+            <div>
+                <img src="images/code-svgrepo-com.svg" alt="Web Design" width="70" height="70">
+                <h2>Web Design</h2>
+                <p>My work focuses on combining aesthetic appeal with functional design to craft engaging and intuitive user interfaces. I have experience working on various projects, including personal websites, business pages, and dynamic web applications, using tools like HTML, CSS, JavaScript, and modern design frameworks.</p>
+                <br><a href="#">Learn more</a>
+            </div>
+            <div>
+                <img src="images/crop-svgrepo-com.svg" alt="UI/UX Design" width="70" height="70">
+                <h2>UI/UX Design</h2>
+                <p>I'm a passionate UI/UX designer and a dedicated Information Technology student. My journey in the world of design began with a fascination for technology and a desire to create intuitive and engaging user experiences.</p>
+                <br><a href="#">Learn more</a>
+            </div>
+            <div>
+                <img src="images/app-store-svgrepo-com.svg" alt="Application Design" width="70" height="70">
+                <h2>Application Design</h2>
+                <p>My projects include designing mobile apps for productivity, social engagement, and e-commerce, all of which have provided me with valuable insights into the challenges and rewards of creating effective user-centered designs. I am excited to continue growing my skills, learning from real-world projects, and making a positive impact through my designs.</p>
+                <br><a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- My Hobbies Section -->
+<section id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Other Hobbies</h1>
+        <div class="my-hobbies">
+            <div class="hobbie">
+                <img src="images/hobby1.png" alt="Hobby: Eating">
+                <div class="layer">
+                    <h3>Eating</h3>
+                    <p>I am a passionate food lover with a deep appreciation for the art of eating! Whether it's exploring street food in my hometown, trying new recipes in my kitchen, or dining at hidden gems around the world, I find joy in every bite.</p>
+                </div>
+            </div>
+            <div class="hobbie">
+                <img src="images/hobby2.png" alt="Hobby: Playing Online Games">
+                <div class="layer">
+                    <h3>Playing Online Games</h3>
+                    <p>I'm also an avid gamer with a passion for exploring virtual worlds and pushing the limits of my skills. Ever since I picked up my first controller, gaming has been more than just a hobby—it's a way of life.</p>
+                </div>
+            </div>
+            <div class="hobbie">
+                <img src="images/hobby3.png" alt="Hobby: Sleeping">
+                <div class="layer">
+                    <h3>Sleeping</h3>
+                    <p>I believe in the power of a good night's sleep. There's nothing I love more than curling up and drifting off into a world of dreams. To me, sleep is not just rest—it's a way to recharge, stay creative, and maintain a healthy mind.</p>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><img src="images/send-svgrepo-com.svg" alt="Email Icon" width="30" height="30"> gabriellaxereil@gmail.com</p>
+                <p><img src="images/phone-incoming-svgrepo-com.svg" alt="Phone Icon" width="30" height="30"> 09654738233</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/gxbautista" aria-label="Facebook"><img src="images/facebook-svgrepo-com.svg" width="30" height="30" alt="Facebook"></a>
+                    <a href="https://www.instagram.com/xxereil/" aria-label="Instagram"><img src="images/instagram-svgrepo-com.svg" width="30" height="30" alt="Instagram"></a>
+                    <a href="https://x.com/siraulokaba_07" aria-label="Twitter"><img src="images/twitter-154-svgrepo-com.svg" width="30" height="30" alt="Twitter"></a>
+                </div>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="Name" placeholder="Your Name" required>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="Email" placeholder="Your Email" required>
+                    <label for="message">Message</label>
+                    <textarea id="message" name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>&copy; 2024 Gabriella Xereil P. Bautista. <img class="heart" src="images/purple-heart-svgrepo-com.svg" alt="Heart Icon" width="20" height="20"> All rights reserved.</p>
+    </div>
+</section>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(event, tabname) {
+        console.log('Tab clicked:', tabname); 
+        for (let tablink of tablinks) {
+            tablink.classList.remove("active-link");
+        }
+        for (let tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+</body>
+</html>
