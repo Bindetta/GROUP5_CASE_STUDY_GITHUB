@@ -54,7 +54,7 @@
         .slides {
             display: flex;
             transition: transform 0.5s ease;
-            width: 100%; /* Ensures full width for flex items */
+            width: 100%;
         }
         .slide {
             min-width: 100%;
@@ -63,6 +63,9 @@
             background-color: #1F2833;
             color: #66FCF1;
             text-align: center;
+        }
+        section {
+            padding: 20px;
         }
         footer {
             text-align: center;
@@ -75,16 +78,16 @@
 <body>
     <header>
         <nav>
-            <a href="#">Home</a>
+            <a href="#home">Home</a>
         </nav>
         <nav>
-            <a href="#">Projects</a>
-            <a href="#">About Me</a>
-            <a href="#">Contact</a>
+            <a href="#projects">Projects</a>
+            <a href="#about">About Me</a>
+            <a href="#contact">Contact</a>
         </nav>
     </header>
 
-    <div class="image-container">
+    <div id="home" class="image-container">
         <img src="img/Mypic.jpg" alt="Your Name">
     </div>
     <div class="description">
@@ -101,7 +104,6 @@
         subject.</p>
     </div>
 
-    <!-- Automatic Slideshow of Descriptions -->
     <div class="slider">
         <div class="slides">
             <div class="slide">
@@ -119,6 +121,23 @@
         </div>
     </div>
 
+    <section id="projects">
+        <h2>Projects</h2>
+        <p>In my projects section, I showcase a variety of web and mobile applications that I've developed during my studies and personal endeavors. Each project reflects my commitment to solving real-world challenges through innovative technology. From interactive websites to user-friendly mobile apps, I have focused on creating intuitive interfaces and seamless user experiences. I invite you to explore these projects to see how I translate creative ideas into functional solutions.</p>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am a passionate and dedicated Information Technology student with a keen interest in web and mobile application development. My journey into technology began at a young age, fueled by a fascination with gadgets and software. I thrive on challenges and enjoy collaborating with others to bring imaginative concepts to life. My goal is to continually enhance my skills and contribute positively to the tech community, embracing the ever-evolving landscape of technology.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>I would love to hear from you! Whether you have questions about my projects, want to collaborate, or simply wish to connect, feel free to reach out. You can contact me via email at johnpaulmani@example.com or connect with me on social media. I believe in the power of networking and am always open to new opportunities and discussions in the tech world.
+
+            Feel free to customize these paragraphs to better fit your style or add specific details!</p>
+    </section>
+
     <footer>
         <p>&copy; 2024 IPT-2 Created by: John Paul T. Mani</p>
     </footer>
@@ -134,7 +153,7 @@
         }
 
         function nextSlide() {
-            currentSlide = (currentSlide + 1) % totalSlides; // Loop back to the first slide
+            currentSlide = (currentSlide + 1) % totalSlides;
             showSlide(currentSlide);
         }
 
@@ -142,4 +161,3 @@
     </script>
 </body>
 </html>
-
