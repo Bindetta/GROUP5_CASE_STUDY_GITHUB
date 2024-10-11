@@ -212,3 +212,279 @@ nav .nav_links li a{
         padding: 40px 0px;
     }
 }
+
+/* About Me Section */
+.About {
+    background-color: #333; /* Dark grey background */
+    padding: 80px 0;
+    text-align: center;
+    color: white;
+    font-family: 'Arial', sans-serif;
+}
+
+.About h2 {
+    font-size: 42px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: #ffffff; /* White text for heading */
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.About p {
+    font-size: 20px;
+    line-height: 1.8;
+    color: #d0d0d0; /* Light grey for readability */
+    width: 75%;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+.About .card {
+    display: inline-block;
+    background-color: #444; /* Slightly lighter grey for the card */
+    color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    max-width: 800px;
+    margin: 50px auto;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.About .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5); /* Stronger shadow on hover */
+}
+
+.About .card h3 {
+    font-size: 28px;
+    color: #aaa; /* Softer light grey color for a seamless look */
+    margin-bottom: 20px;
+}
+
+.About .card p {
+    color: #d0d0d0; /* Light grey text for readability */
+}
+
+.About .icons {
+    margin-top: 20px;
+    font-size: 22px;
+}
+
+.About .icons i {
+    margin: 0 15px;
+    color: #bbb; /* Light grey for subtle integration */
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.About .icons i:hover {
+    color: #ffffff; /* Brighter hover color for emphasis */
+    transform: scale(1.2);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .About p {
+        width: 90%;
+    }
+
+    .About .card {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .About h2 {
+        font-size: 36px;
+    }
+}
+
+/* Contact Section */
+.Contact {
+    background-color: #333; /* Dark grey background to match the theme */
+    padding: 80px 0;
+    text-align: center;
+    color: white;
+    font-family: 'Arial', sans-serif;
+}
+
+.Contact h2 {
+    font-size: 42px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: #ffffff; /* White text for heading */
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.Contact .contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.Contact .input-group {
+    margin-bottom: 20px;
+}
+
+.Contact .input-group input,
+.Contact .input-group textarea {
+    width: 100%;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #444; /* Slightly lighter background for form fields */
+    border: none;
+    color: #fff; /* White text */
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.Contact .input-group input::placeholder,
+.Contact .input-group textarea::placeholder {
+    color: #bbb; /* Light grey placeholder color */
+}
+
+.Contact .input-group textarea {
+    resize: none; /* Disable resizing for the textarea */
+}
+
+.Contact .input-group button {
+    width: 100%;
+    padding: 15px;
+    background-color: #007BFF; /* Theme color for button */
+    border: none;
+    color: white;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.Contact .input-group button:hover {
+    background-color: #0056b3; /* Darker shade for hover effect */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .Contact .contact-form {
+        width: 90%;
+    }
+
+    .Contact h2 {
+        font-size: 36px;
+    }
+}
+
+/* Portfolio Section */
+.Portfolio {
+    background-color: #333; /* Dark grey background */
+    padding: 80px 0;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.Portfolio h2 {
+    font-size: 42px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 50px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    position: relative;
+    display: inline-block;
+}
+
+.Portfolio h2::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 3px;
+    background-color: #007BFF; /* Accent color */
+    margin: 10px auto 0;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 0 20px;
+}
+
+.project {
+    background-color: #444; /* Dark card background */
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+.project:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+}
+
+.project-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 3px solid #007BFF; /* Accent color */
+    transition: transform 0.4s ease;
+}
+
+.project:hover .project-image img {
+    transform: scale(1.1);
+}
+
+.project-info {
+    padding: 20px;
+    text-align: left;
+}
+
+.project-info h3 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.project-info p {
+    color: #bbb; /* Light grey for project descriptions */
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.view-project-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF; /* Button accent color */
+    color: #ffffff;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.view-project-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .Portfolio h2 {
+        font-size: 36px;
+    }
+
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project-info h3 {
+        font-size: 22px;
+    }
+}
