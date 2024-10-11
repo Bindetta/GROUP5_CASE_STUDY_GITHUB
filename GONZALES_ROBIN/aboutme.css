@@ -1,0 +1,152 @@
+body{
+    background-image: url('media/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;   
+    scroll-behavior: smooth; 
+    color: white;
+}
+#toolbar{
+    display: flex;
+    padding: 50px;
+    justify-content: end;
+    text-align: end;
+    gap: 20px;
+}
+.home_container, .designs_container, .about_container, .contactus_container{
+    padding: 20px;
+    border-radius: 10%;
+    transition: 0.4s;
+}
+.home_container:hover, .designs_container:hover, .about_container:hover, .contactus_container:hover{
+    background-color: #404040;
+    border-radius: 10%;
+    transform: scale(1.1);
+    transition: 0.4s;
+}
+
+.profile_img{
+    width: 300px;
+    height: auto;
+    border: 2px solid lightblue;
+    border-radius: 100%;
+    animation-name: beat;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+}
+@keyframes beat{
+    0%   {transform: scale(1);}
+    50%  {transform: scale(1.2)}
+    100% {transform: scale(1);}
+}
+#toolbar a{
+    padding: 10px;
+    font-size: 32px;
+    font-style: normal;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    text-decoration: none;
+    transition: 0.4s;
+}
+#toolbar a:hover{
+    transition: 0.4s;
+    color: lightblue;
+}
+#name_plate{
+    padding: 40px;
+}
+#header_main{
+    background-color: #404040;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 64px;
+    text-align: left;
+    padding-left: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+#header_main_name{
+    font-size: 72px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+#header_main_contact{
+    font-size: 32px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#typing_text{
+    font-size: 32px;
+    text-align: center;
+    font-family:  system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#typing_text span{
+    position: relative;
+}
+#typing_text span::before{
+    content: "Web Developer";
+    color: white;
+    animation: words 10s infinite;
+}
+#typing_text span::after{
+    content: "";
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 100%;
+    border-left: 3px solid white;
+    right: -8;
+    animation: cursor 0.6s infinite;
+}
+@keyframes cursor {
+    to {
+        border-left: 3px solid var(--accent-color);
+    }
+}
+
+@keyframes words {
+    0%, 20% {
+        color: orange;
+        content: "a Programmer";
+    }
+    21%, 40% {
+        color: purple;
+        content: "an Animator";
+    }
+    41%, 60% {
+        color: skyblue;
+        content: "a Front end Developer";
+    }
+    61%, 80% {
+        color: greenyellow;
+        content: "a Computer literate";
+    }
+    81%, 100% {
+        color: cyan;
+        content: "an Information Technology Graduate";
+    }
+}
+#images_main{
+    padding: 100px;
+}
+.gifs{
+    opacity: 1;
+    padding: 60px;
+    width: 180px;
+    height: auto;
+}
+#subtitle{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#highlights{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 42px;
+    text-align: left;
+    padding: 30px;
+}
+#nameplate{
+    background-color: #404040;
+    font-size: small;
+}
