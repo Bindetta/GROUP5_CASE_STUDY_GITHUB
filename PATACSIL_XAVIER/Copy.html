@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+    <div class="First_header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <i class="fa-solid fa-x"></i>
+                    <div class="logo_text">XAVIER PATACSIL</div>
+                </div>
+                <nav>
+                    <div class="toggle_button">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="nav_links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li> <!-- Updated Portfolio Link -->
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="container">
+                <div class="my_pic">
+                    <img src="my_image.png" alt="profile pic">
+                </div>
+                <div class="my_text">
+                    <h5>Hi I'm a <span class="input">Web and Mobile Application Developer</span></h5>
+                    <h1>Xavier Patacsil</h1>
+                    <p>
+                        I am a 4th year student at Tarlac State University (TSU). I have been taking WMA as my major for 4 years.
+                        As I continue to learn and study, I’m confident in my skills to develop quality applications or websites.
+                    </p>
+                    <div class="button_group">
+                        <a href="#about" class="btn active">About</a>
+                        <a href="#contact" class="btn">Contact</a>
+                    </div>
+                    <div class="social">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <div id="about" class="About">
+        <div class="wrapper">
+            <h2>About Me</h2>
+            <div class="card">
+                <h3>Hello! I'm Xavier Patacsil</h3>
+                <p>
+                    I’m passionate about web and mobile application development, with years of experience in front-end 
+                    and back-end programming. I love designing smooth, user-friendly interfaces and writing clean, 
+                    efficient code. My skillset includes <span>HTML, CSS, JavaScript, React, Vue.js</span>, and more. 
+                    Recently, I’ve been diving into <span>Unity game development</span> and enjoy working on creative, 
+                    interactive projects.
+                    <br><br>
+                    As a final-year student at Tarlac State University, I’m always excited to learn more and apply my 
+                    knowledge to real-world challenges. Feel free to reach out through the contact links below!
+                </p>
+                <div class="icons">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   <!-- Portfolio Section -->
+<div id="portfolio" class="Portfolio">
+    <div class="wrapper">
+        <h2>My Portfolio</h2>
+        <div class="portfolio-grid">
+            <!-- Example Project 1 -->
+            <div class="project">
+                <div class="project-image">
+                    <img src="project1.jpg" alt="Project 1">
+                </div>
+                <div class="project-info">
+                    <h3>Project Title 1</h3>
+                    <p>A brief description of this project and what technologies were used to build it.</p>
+                    <a href="#" class="view-project-btn">View Project</a>
+                </div>
+            </div>
+            <!-- Example Project 2 -->
+            <div class="project">
+                <div class="project-image">
+                    <img src="project2.jpg" alt="Project 2">
+                </div>
+                <div class="project-info">
+                    <h3>Project Title 2</h3>
+                    <p>A brief description of this project and what technologies were used to build it.</p>
+                    <a href="#" class="view-project-btn">View Project</a>
+                </div>
+            </div>
+            <!-- Example Project 3 -->
+            <div class="project">
+                <div class="project-image">
+                    <img src="project3.jpg" alt="Project 3">
+                </div>
+                <div class="project-info">
+                    <h3>Project Title 3</h3>
+                    <p>A brief description of this project and what technologies were used to build it.</p>
+                    <a href="#" class="view-project-btn">View Project</a>
+                </div>
+            </div>
+            <!-- Add more projects as needed -->
+        </div>
+    </div>
+</div>
+
+    <!-- Contact Section -->
+    <div id="contact" class="Contact">
+        <div class="wrapper">
+            <h2>Contact Me</h2>
+            <div class="contact-form">
+                <form action="#" method="post">
+                    <div class="input-group">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="input-group">
+                        <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+                    </div>
+                    <div class="input-group">
+                        <button type="submit" class="btn">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+    <script>
+        var toggle_button = document.querySelector(".toggle_button");
+        var nav = document.querySelector(".nav_links");
+        var links = document.querySelector(".nav_links li");
+
+        toggle_button.addEventListener("click", function(){
+            this.classList.toggle("click");
+            nav.classList.toggle("open");
+        });
+
+        var typed = new Typed(".input", {
+            strings: ["Web Developer", "Unity Developer", "Backend Developer"],
+            typedSpeed: 70,
+            backSpeed: 55,
+            loop: true
+        });
+
+        // Optional: Smooth scrolling behavior
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+    
+</body>
+</html>
