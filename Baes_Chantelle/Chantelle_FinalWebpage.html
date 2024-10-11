@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="cssror.css">
+    <title>Chantelle Dane L. Baes - Portfolio</title>
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo"> &lt;/ &gt; <span></span></a>
+        <nav>
+            <a href="#" aria-label="Home"> Home</a>
+            <a href="#gallery" aria-label="Gallery">Gallery</a>
+            <a href="#skills" aria-label="Skills">Skills</a>
+            <a href="#education" aria-label="Education">Education</a>
+            <a href="#contact" aria-label="Contact">Contact</a>
+        </nav>
+    </header>
+    
+    <section class="home">
+        <div class="home-img">
+            <img src="chantelle.jpg" alt="Portrait of Chantelle Baes">
+        </div>
+        <div class="home-content">
+            <h1>Hi, It's <span>Chantelle</span></h1>
+            <h3 class="typing-text">I'm a <span></span></h3>
+            <p>As a 4th-year Information Technology student at Tarlac State University, I specialize in Web Mobile and Application development. I'm passionate about creating user-friendly, dynamic websites and applications that make a difference.</p>
+            <br>
+            <p>When I'm not coding, you can find me caring for my adorable cats. Life may be a rollercoaster, but I embrace every twist and turn!</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/yourprofile" target="_blank" aria-label="Facebook">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="https://github.com/yourprofile" target="_blank" aria-label="GitHub">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://twitter.com/yourprofile" target="_blank" aria-label="Twitter">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+                <a href="https://www.instagram.com/yourprofile" target="_blank" aria-label="Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </div>
+            <a href="#" class="btn">Hire me</a>
+        </div>
+    </section>
+
+    <!-- GALLERY SECTION -->
+    <section class="gallery" id="gallery">
+        <div class="grid">
+            <div class="image-placeholder">
+                <img src="p1.jpg" alt="">
+            </div>
+            <div class="image-placeholder">
+                <img src="p2.jpg" alt="">
+            </div>
+            <div class="image-placeholder">
+                <img src="p3.jpg" alt="">
+            </div>
+            <div class="image-placeholder">
+                <img src="p4.jpg" alt="">
+            </div>
+            <div class="image-placeholder">
+                <img src="p5.jpg" alt="">
+            </div>
+            <div class="image-placeholder">
+                <img src="p6.jpg" alt="">
+            </div>
+            <div class="image-placeholder">
+                <img src="p7.jpg" alt="">
+            </div>
+            <div class="image-placeholder">
+                <img src="p8.jpg" alt="">
+            </div>
+            <div class="image-placeholder">
+                <img src="p9.jpg" alt="">
+            </div>
+            <div class="image-placeholder">
+                <img src="p10.jpg" alt="">
+            </div>
+            <div class="image-placeholder">
+                <img src="p11.jpeg" alt="">
+            </div>
+            <div class="image-placeholder">
+                <img src="p12.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills">
+        <div class="skills-container">
+            <h2>My Skills</h2>
+            <div class="filter-buttons">
+                <button onclick="filterSkills('all')" aria-pressed="true">All</button>
+                <button onclick="filterSkills('frontend')" aria-pressed="false">Frontend</button>
+                <button onclick="filterSkills('backend')" aria-pressed="false">Backend</button>
+            </div>
+            <div class="skills-list">
+                <div class="skill-item frontend">
+                    <h3>Python</h3>
+                    <p>Proficient in Python for various applications, including web development and data analysis.</p>
+                    <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress" style="width: 85%;"></div>
+                    </div>
+                    <div class="tooltip">Expert Level</div>
+                </div>
+                <div class="skill-item backend">
+                    <h3>Java</h3>
+                    <p>Experience in Java for building robust and scalable applications, both desktop and web-based.</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 75%;"></div>
+                    </div>
+                    <div class="tooltip">Advanced Level</div>
+                </div>
+                <div class="skill-item frontend">
+                    <h3>HTML</h3>
+                    <p>Skilled in HTML to create structured and semantic web pages.</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 90%;"></div>
+                    </div>
+                    <div class="tooltip">Advanced Level</div>
+                </div>
+                <div class="skill-item frontend">
+                    <h3>CSS</h3>
+                    <p>Proficient in CSS for styling web applications and ensuring responsive design.</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 80%;"></div>
+                    </div>
+                    <div class="tooltip">Proficient Level</div>
+                </div>
+                <div class="skill-item frontend">
+                    <h3>Ionic HTML</h3>
+                    <p>Experience in building hybrid mobile applications using Ionic and HTML for cross-platform solutions.</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 70%;"></div>
+                    </div>
+                    <div class="tooltip">Intermediate Level</div>
+                </div>
+                <div class="skill-item backend">
+                    <h3>MySQL</h3>
+                    <p>Knowledge of MySQL for managing databases and executing complex queries for data retrieval.</p>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 65%;"></div>
+                    </div>
+                    <div class="tooltip">Intermediate Level</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EDUCATION SECTION -->
+    <section id="education">
+        <div class="education-container">
+            <div class="education-item">
+                <i class="fa-solid fa-school"></i>
+                <h3>Elementary School</h3>
+                <p><strong>School:</strong> Libon Elementary School</p>
+                <p><strong>Location:</strong> Panay, Capiz</p>
+                <hr class="separator">
+                <h4>Achievements:</h4>
+                <ul>
+                    <li>Valedictorian</li>
+                    <li>Consistent Top 1 Student</li>
+                    <li>Best SGT @ Arms President</li>
+                    <li>Folk Dance Champion</li>
+                    <li>Ballroom Dance Winner</li>
+                </ul>
+            </div>
+            <div class="education-item">
+                <i class="fa-solid fa-school"></i>
+                <h3>Junior High School</h3>
+                <p><strong>School:</strong> College of St. John Roxas La Salle Affiliated School</p>
+                <hr class="separator">
+                <h4>Achievements:</h4>
+                <ul>
+                    <li>Best in Research</li>
+                    <li>Graduated with Honors</li>
+                </ul>
+            </div>
+            <div class="education-item">
+                <i class="fa-solid fa-school"></i>
+                <h3>Senior High School</h3>
+                <p><strong>School:</strong> First City Providential College</p>
+                <hr class="separator">
+                <h4>Achievements:</h4>
+                <ul>
+                    <li>Graduated with Honors</li>
+                    <li>Achieved High Honors</li>
+                </ul>
+            </div>
+            <div class="education-item">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <h3>College</h3>
+                <p><strong>Course:</strong> Bachelor of Science in Information Technology (Major in Web Mobile and Application)</p>
+                <hr class="separator">
+                <h4>Achievements:</h4>
+                <ul>
+                    <li>Consistent Dean's Lister (Ongoing)</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact">
+        <div class="contact-form">
+            <h2>Contact Me</h2>
+            <div class="contact-details">
+                <p><strong>Name:</strong> Chantelle Dane Baes</p>
+                <p><strong>Email:</strong> <a href="mailto:chantelle@gmail.com">chantelle@gmail.com</a></p>
+                <p><strong>Phone:</strong> <a href="tel:09123456789">09123456789</a></p>
+            </div>
+            <div class="social-media">
+                <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="mailto:chantelle@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <footer aria-label="Footer">
+        <p>&copy; 2024 Chantelle Dane L. Baes. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function filterSkills(category) {
+    const skills = document.querySelectorAll('.skill-item');
+    const buttons = document.querySelectorAll('.filter-buttons button');
+
+    skills.forEach(skill => {
+        if (category === 'all' || skill.classList.contains(category)) {
+            skill.style.display = 'block';
+        } else {
+            skill.style.display = 'none';
+        }
+    });
+
+    buttons.forEach(button => {
+        button.setAttribute('aria-pressed', button.textContent.toLowerCase() === category);
+    });
+}
+    </script>
+</body>
+
+</html>
