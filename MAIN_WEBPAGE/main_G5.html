@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        :root {
+            --color-primary: black;
+            --color-secondary: red;
+            --gradient-primary: linear-gradient(135deg, black, red);
+            --gradient-secondary: linear-gradient(135deg, red, black);
+        }
+
+        body {
+            font-family: 'Garamond', serif;
+            background-color: #181818;
+            color: #f1f1f1;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: url('https://plus.unsplash.com/premium_photo-1670402130476-25aa8c1986c9?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center/cover;
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+            position: relative;
+        }
+        header::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+        header h1 {
+            font-size: 4vw;
+            margin: 0;
+            z-index: 2;
+            position: relative;
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8);
+            text-align: center;
+            padding: 10px 0;
+        }
+        header p {
+            font-size: 2vw;
+            z-index: 2;
+            position: relative;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            margin: 5px 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #111;
+        }
+        nav a {
+            color: white;
+            padding: 16px 24px;
+            text-decoration: none;
+            text-align: center;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: var(--color-secondary);
+            border-radius: 4px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #282828;
+            background: repeating-radial-gradient(rgb(45, 30, 30), rgb(89, 4, 4) 50px);
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+        }
+        .intro {
+            margin-bottom: 20px;
+            text-align: center;
+            font-size: 1.2em; 
+        }
+        .profile {
+            perspective: 1000px;
+            height: 300px; 
+            position: relative;
+        }
+        .profile-inner {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            transform-style: preserve-3d;
+            transition: transform 0.6s;
+        }
+        .profile:hover .profile-inner {
+            transform: rotateY(180deg);
+        }
+        .profile-front, .profile-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0;
+            margin: 0;
+        }
+        .profile-front {
+            background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+            color: white; 
+        }
+        .profile-back {
+            background: linear-gradient(135deg, var(--color-secondary), var(--color-primary));
+            color: white; 
+            transform: rotateY(180deg);
+            text-align: center;
+            position: relative;
+        }
+        .profile img {
+            width: 100%; 
+            height: 100%; 
+            border-radius: 10px; 
+            object-fit: cover; 
+        }
+        .profile h2 {
+            margin: 0;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .profile a {
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+            border: 2px solid whitesmoke;
+            background: var(--color-primary);
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.1s ease, color 0.1s ease;
+            display: inline-block;
+            position: absolute; 
+            bottom: 20px; 
+            left: 50%;
+            transform: translateX(-50%); 
+            z-index: 2; 
+        }
+        .profile a:hover {
+            background-color: var(--color-secondary);
+            color: white;
+        }
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #111;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Group 5's Portfolio</h1>
+        <p>Unveiling our magical journey through the realms of IT!</p>
+    </header>
+    <nav>
+        <a href="#Baes_Chantelle/Chantelle_FinalWebpage.html">Chantelle</a>
+        <a href="#BAUTISTA_GABRIELLA/index.html">Gabriella</a>
+        <a href="#GONZALES_ROBIN/main.html">Robin</a>
+        <a href="#GUECO_KARL/portfolio.html">Karl</a>
+        <a href="#MANI_JOHNPAUL/home.html">John Paul</a>
+        <a href="#PATACSIL_XAVIER/My_Portfolio_Website.html">Xavier</a>
+    </nav>
+    <div class="container">
+        <div class="intro">
+            <h2>Aspiring IT Professionals</h2>
+            <p>Join us as we conquer the challenges of our final year!</p>
+        </div>
+        <div id="member1" class="profile">
+            <div class="profile-inner">
+                <div class="profile-front">
+                    <h2>Chantelle</h2>
+                </div>
+                <div class="profile-back">
+                    <img src="chantelle.jpg" alt="Chantelle's photo" />
+                    <a href="Chantelle_FinalWebpage.html">Visit Profile</a>
+                </div>
+            </div>
+        </div>
+        <div id="member2" class="profile">
+            <div class="profile-inner">
+                <div class="profile-front">
+                    <h2>Gabriella</h2>
+                </div>
+                <div class="profile-back">
+                    <img src="Gab.png" alt="Gabriella's photo" />
+                    <a href="index.html">Visit Profile</a>
+                </div>
+            </div>
+        </div>
+        <div id="member3" class="profile">
+            <div class="profile-inner">
+                <div class="profile-front">
+                    <h2>Robin</h2>
+                </div>
+                <div class="profile-back">
+                    <img src="robin.png" alt="Robin's photo" />
+                    <a href="main.html">Visit Profile</a>
+                </div>
+            </div>
+        </div>
+        <div id="member4" class="profile">
+            <div class="profile-inner">
+                <div class="profile-front">
+                    <h2>Karl</h2>
+                </div>
+                <div class="profile-back">
+                    <img src="karl.jpg" alt="Karl's photo" />
+                    <a href="portfolio.html">Visit Profile</a>
+                </div>
+            </div>
+        </div>
+        <div id="member5" class="profile">
+            <div class="profile-inner">
+                <div class="profile-front">
+                    <h2>John Paul</h2>
+                </div>
+                <div class="profile-back">
+                    <img src="paul.jpg" alt="John Paul's photo" />
+                    <a href="home.html">Visit Profile</a>
+                </div>
+            </div>
+        </div>
+        <div id="member6" class="profile">
+            <div class="profile-inner">
+                <div class="profile-front">
+                    <h2>Xavier</h2>
+                </div>
+                <div class="profile-back">
+                    <img src="xavy.png" alt="Xavier's photo" />
+                    <a href="My_Portfolio_Website.html">Visit Profile</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Enchanted Group Portfolio</p>
+    </footer>
+</body>
+</html>
